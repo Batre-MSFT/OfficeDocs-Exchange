@@ -17,7 +17,7 @@ description: "Summary: Learn how to recover a lost Exchange 2016 or Exchange 201
 
 You can recover a lost Exchange server by using the _Mode:RecoverServer_ switch in unattended mode (from the command line) of Exchange Setup. Since most Exchange server settings are stored in Active Directory, the `Setup.exe /Mode:RecoverServer` command uses that information during the installtion of Exchange on a new server with the same name.
   
-Recovering a lost Exchange server is often accomplished by using new hardware. However, you can also use an existing server that doesn't already have Exchange installed on it.
+Recovering a lost Exchange server is often accomplished by using new hardware. However, you can also use an existing server that doesn't already have Exchange installed on it, as long as the server has same name.
   
 This topic shows you how to recover a lost Exchange server that isn't a member of a database availability group (DAG). For detailed steps about how to recover a server that was a member of a DAG, see [Recover a database availability group member server](recover-dag-member-servers.md).
   
@@ -80,7 +80,7 @@ Looking for other management tasks related to backing up and restoring data? Che
 
     For more information about the optional switches, see [Use unattended mode in Exchange Setup](../../plan-and-deploy/deploy-new-installations/unattended-installs.md).
 
-8. After Setup has completed, but before you put the recovered server into production, reconfigure any custom settings that were previously present on the server, and then restart the server.
+8. After Setup has completed, but before you put the recovered server into production, reconfigure any custom settings that were previously present on the server, and then restart the server. If the server previously has a different SSL certificate imported, that must be re-imoprted and configured as well.
 
     This example uses the Exchange installation files on drive E: to install Exchange in the default location (%ProgramFiles%\Microsoft\Exchange Server\V15) and recover the Exchange server.
 
