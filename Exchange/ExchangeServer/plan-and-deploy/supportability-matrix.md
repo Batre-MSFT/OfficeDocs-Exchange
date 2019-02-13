@@ -50,7 +50,7 @@ The following tables identify the operating system platforms on which each versi
 |:-----|:-----|:-----|:-----|:-----|:-----|
 |Windows Server 2019|X|||||
 |Windows Server 2016||X||||
-|Windows Server 2012 R2||X|X|X||
+|Windows Server 2012 R2||X|X|X||X
 |Windows Server 2012||X|X|X|X|
 |Windows Server 2008 R2 SP1||||X|X|
 |Windows Server 2008 SP2|||||X|
