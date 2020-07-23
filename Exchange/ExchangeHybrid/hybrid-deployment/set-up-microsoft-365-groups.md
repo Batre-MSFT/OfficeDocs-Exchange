@@ -66,6 +66,9 @@ Before you start, make sure that you've done the following:
 
 9. Open Active Directory Users and Computers on an Active Directory domain controller and locate the user account that begins with **AAD\_**. Make note of this account's name. You can also use a PowerShell cmdlet to [Determine your AD DS Connector Account](https://docs.microsoft.com/azure/active-directory/hybrid/how-to-connect-configure-ad-ds-connector-account#determine-your-ad-ds-connector-account)
 
+Note:
+Some older version of AAD Connect tool have service account starting with ***MSOL_**, ensure the correct service account is specific in following command
+
 10. Open the Windows PowerShell on the Azure Active Directory Connect server, and run the following commands.
 
     ```PowerShell
